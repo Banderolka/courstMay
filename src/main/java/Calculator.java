@@ -3,6 +3,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
+ * @author Gudimenko Oltg
+ * @see #main(String[]) пока вся логика расположена в этом методе. В методе считывкбтся с клавиатуры и складываются два double
  *
  */
 public class Calculator {
