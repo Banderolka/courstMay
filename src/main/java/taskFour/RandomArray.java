@@ -10,6 +10,7 @@ public class RandomArray {
         // заполняю массив рандомными значениями от -10 до 10
         for (int i = 0; i < 20; i++) {
             ints[i] = (random.nextInt(20) - 10);
+            System.out.print(ints[i] + " ");
         }
 
         int max = Integer.MIN_VALUE; // переменная для максимального отрицательного значения
@@ -23,7 +24,7 @@ public class RandomArray {
                 max = ints[i];
                 maxElement = i;
             }
-            if (ints[i] >= 0 && ints[i] < min){
+            if (ints[i] > 0 && ints[i] < min){
                 min = ints[i];
                 minElement = i;
             }
@@ -33,5 +34,9 @@ public class RandomArray {
         ints[maxElement] = min;
         ints[minElement] = max;
 
+        System.out.println("");
+        for(int x: ints){
+            System.out.print(x + " ");
+        }
     }
 }
