@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class ArrayString extends ReadClass {
     int arraySize; // для размера массива
     private  String[] arrayString;
-    
+
     public int sizeArray(){
         System.out.println("Введите размер массива");
         arraySize = (int) nextDouble();
