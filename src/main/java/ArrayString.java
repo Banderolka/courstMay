@@ -2,6 +2,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * @see ArrayString в классе реализована работа с массивом
+ */
+
 public class ArrayString extends ReadClass {
     int arraySize; // для размера массива
     private  String[] arrayString;
@@ -13,7 +17,7 @@ public class ArrayString extends ReadClass {
         return arraySize;
     }
 
-    private String[] fillingArray() {
+    public String[] fillingArray() {
         // заполняем массив с клавиатуры
          arrayString = new String[arraySize];
         System.out.println("Заполните массив словами");
@@ -25,7 +29,7 @@ public class ArrayString extends ReadClass {
     }
 
         //находим наибольшое слово в массиве
-    private void sorting(){
+        public String sorting(){
 
         String max = arrayString[0];
         for (int i = 1; i < arraySize; i++) {
@@ -34,7 +38,7 @@ public class ArrayString extends ReadClass {
             }
         }
 
-        System.out.println("Самое длинное слово в массиве: " + max);
+       return max;
 
     }
 }

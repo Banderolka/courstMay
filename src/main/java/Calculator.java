@@ -4,11 +4,11 @@ import java.io.InputStreamReader;
 
 /**
  * @author Gudimenko Oltg
- * @see #selectOperation() происходит выбор операции и ввод цифр над которыми проводим операции
+ * @see Calculator в классе реализованна работа калькулятора
  */
 
 
-public class Calculator extends ReadClass {
+public class Calculator {
     private double a;
     private double b;
 
@@ -16,40 +16,25 @@ public class Calculator extends ReadClass {
 
     }
 
-
-    public void selectOperation() {
-        System.out.println("Введиьте цифры");
-        a = nextDouble();
-        b = nextDouble();
-
-        System.out.println("Выберите операцию:\n1 - Сложение\n2 - Вычитание\n3 - Умножение\n4 - Деление");
-        int numberOperation = (int) nextDouble();
-        if (numberOperation == 1) {
-            System.out.printf("Сумма равна: %+.2f", sum());
-        } else if (numberOperation == 2) {
-            System.out.printf("Разница равна: %+.2f", subtraction());
-        } else if (numberOperation == 3) {
-            System.out.printf("Произведение равно: %+.2f", multiplication());
-        } else if (numberOperation == 4) {
-            System.out.printf("Частное равно: %+.2f", division());
-        }
-
-
+    public Calculator(double a, double b){
+        this.a = a;
+        this.b = b;
     }
 
-    private double sum() {
+
+    public double sum() {
         return a + b;
     }
 
-    private double subtraction() {
+     public double subtraction() {
         return a - b;
     }
 
-    private double multiplication() {
+     public double multiplication() {
         return a * b;
     }
 
-    private double division() {
+     public double division() {
         return a / b;
     }
 
