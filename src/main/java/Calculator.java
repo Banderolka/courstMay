@@ -35,7 +35,17 @@ public class Calculator {
     }
 
      public double division() {
-        return a / b;
-    }
+        double c = 0;
+
+        try {
+            if (b == 0) throw  new  ArithmeticException();
+           c = a / b;
+
+        }catch (ArithmeticException e){
+            System.out.println("Делить на ноль нельзя");
+            System.exit(0);
+         }
+        return c;
+     }
 
 }
