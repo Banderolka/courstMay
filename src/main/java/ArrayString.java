@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import calcu.ReadClass;
 
 /**
  * @see ArrayString в классе реализована работа с массивом

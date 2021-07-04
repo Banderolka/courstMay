@@ -1,10 +1,12 @@
-import java.io.BufferedReader;
+package calcu;
+
+import calcu.ReadClass;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * @author Gudimenko Oltg
- * @see #main(String[]) в методе разводящаая точка между Calculator и ArrayString
+ * @see #main(String[]) в методе разводящаая точка между calcu.Calculator и ArrayString
  *
  *
  */
